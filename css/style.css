@@ -1,0 +1,487 @@
+/* comentario */
+/* selectores */
+/* aplicar estilos mediantes estos selectores */
+/* nombre de etiquetas */
+/*nombre de CLASS
+.nombredeClass{...}*/
+/*nombre de ID (únicos e irrepetibles)
+#nombredeID{...}*/
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo fondo general*/
+
+html {
+    height: 100%;
+  }
+
+body{
+    background-image: url(../img/fondo-hormigon.png);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+
+/* estilos de header */
+
+header{
+    background-color: rgba(128, 128, 128, 0.548);
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    background-color: rgb(185, 35, 24);
+    color: white;
+    height: 1vh;
+    margin: 1px;
+    padding: 2rem;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+
+/* estilos para pantallas de celulares */
+.wrap{
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem 1rem;
+    border: 3px solid whitesmoke;
+    box-shadow: 0 0 25px black;
+    backdrop-filter: blur 10px;
+    ;
+}
+
+
+/* estilos de main */
+
+main{
+    height: 100vh;
+    background-image: url(../img/Estructuras_Hormigon_03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    ;
+}
+
+main p{
+    font-family: font-family, 'Roboto', sans-serif;
+    font-weight: bold;
+    }
+
+
+main section table{
+    padding: 20px;
+    margin-bottom: 50px;
+}    
+
+
+/* estilos inicio.html */
+
+section{
+    margin: 2rem;
+}
+
+section h2{
+    color: rgb(185, 35, 24);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+section p{
+    color: rgb(44, 43, 43);
+    font-size: 16px;
+    text-transform:initial;
+}
+
+main .servicio .sp12, .sp22, .sp32, .sp42, .sp52, .sp62{
+    display: none;
+}
+
+main .servicio{
+    height: 100vh;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main .servicio div{
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+main .servicio div img{
+    width: 50%;
+    height: 100%;
+    /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
+    object-fit: cover;
+}
+
+main .servicio div div{
+    width: 50%;
+    margin-left: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main .servicio div .st1, .st2, .st3, .st4, .st5, .st6{
+    margin: 0;
+    color: rgb(185, 35, 24);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+main .servicio div .sp11, .sp21, .sp31, .sp41, .sp51, .sp61{
+    color: rgb(44, 43, 43);
+    font-size: 15px;
+    text-transform:initial;
+}
+
+
+/* estilos proyectos.html */
+
+/* .imagenes .proyecto-1 .texto1, .proyecto-2 .texto2, .proyecto-3 .texto3, .proyecto-4 .texto4{ */
+.imagenes div div{
+    display: none;
+}
+
+.imagenes div img{
+    width: 100%;
+    height: 100%;
+    /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
+    object-fit: cover;
+}
+
+.imagenes{
+    height: 80vh;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 55%);
+    row-gap: 1rem;
+}
+
+
+/* estilos de la-empresa */
+
+main section .titulo-puente-mujer, .parrafo-puente-mujer, .cont-puente-mujer .puente-mujer{
+    display: none;
+}
+
+.cont-puente-mujer{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.le-pm{
+    margin: rem;
+}
+
+.le-pm-t{
+    color: rgb(185, 35, 24);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.le-pm-p{
+    color: rgb(44, 43, 43);
+    font-size: 16px;
+    text-transform:initial;
+}
+
+.insta{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.insta p{
+    color: rgb(185, 35, 24);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+/* estilos de noticias.html */
+
+section .noticias li img{
+    width: 100%;
+    height: 100%;
+    /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+section .noticias li .n1-t, .n2-t, .n3-t, .n4-t{
+    margin: 1rem 0 0 0;
+    color: rgb(185, 35, 24);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section .noticias li .n1-p, .n2-p, .n3-p, .n4-p{
+    color: rgb(44, 43, 43);
+    font-size: 16px;
+    text-transform:initial;
+}
+
+
+main .prep{
+    display: none;
+    margin: 4rem 0 0 2rem;
+    color: rgb(185, 35, 24);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+main .ult-not{
+    margin: 4rem 0 0 2rem;
+    color: rgb(185, 35, 24);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+main ol{
+    display: none;
+    margin: 1rem 0 0 3rem;
+    color: rgb(44, 43, 43);
+    font-size: 18px;
+    text-transform:initial;
+    font-weight: 600;
+}
+
+
+/* estilos contacto.html */
+
+main form{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+main form fieldset legend{
+    color: rgb(185, 35, 24);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main form fieldset div{
+    margin: 1rem;
+    color: rgb(44, 43, 43);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform:initial;
+}
+
+main .presupuestos{
+    display: none;
+}
+
+main .presupuestos h4{
+    color: rgb(185, 35, 24);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main .presupuestos p{
+    margin: 1rem;
+    color: rgb(44, 43, 43);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform:initial;
+}
+
+main table{
+    border: solid 1px rgb(44, 43, 43);
+}
+
+main .presupuestos table thead{
+    background-color: rgb(185, 35, 24);
+}
+ 
+main .presupuestos table thead th{
+    border-bottom: solid 1px rgb(44, 43, 43);
+    color: whitesmoke;
+    font-size: 18px;
+    text-transform:uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+main .presupuestos table tbody tr td{
+    border-bottom: solid 1px rgb(44, 43, 43);
+    padding: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+main .presupuestos table tbody tr{
+    cursor: pointer;
+}
+
+main .presupuestos table tbody tr:hover {
+    background-color: rgb(151, 149, 149);
+}
+
+
+/* estilos de relative */
+
+.item-relative{
+    height: 300px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+/* estilos de absolute */
+
+.item-absolute{
+    height: 300px;
+    position: absolute;
+    top: 800px;
+}
+
+/* estilos de fixed */
+
+.item-fixed{
+    height: 3rem;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+}
+
+
+ 
+/* estilos de footer */
+
+footer {
+    background: rgb(185, 35, 24);
+    padding: 0 20px;
+    margin-top: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid black;
+}
+
+footer h6{
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer a{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* estilos para desktop */
+
+/* mq de desktop */
+
+@media screen and (min-width: 1024px){
+    
+    /* index */
+    
+    main .servicio .sp11, .sp21, .sp31, .sp41, .sp51, .sp61{
+        display: none;
+    }
+
+    main .servicio .sp12, .sp22, .sp32, .sp42, .sp52, .sp62{
+        display: block;
+        color: rgb(44, 43, 43);
+        font-size: 15px;
+        text-transform:initial;
+    }   
+
+    /* la-empresa */
+
+    main section .titulo-puente-mujer, .parrafo-puente-mujer, .cont-puente-mujer .puente-mujer{
+        display: block;
+    }
+
+    /* proyectos */
+
+    .imagenes div div{
+        display: block;
+        margin-right: 5rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 80%;
+    }
+    .imagenes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 55%);
+        
+    }
+
+    .imagenes div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagenes div img{
+        height: 250px;
+        position: relative;
+        top: 5px;
+        right: 10px;
+    }
+
+    .imagenes div div .texto1, .texto2, .texto3, .texto4{
+        text-transform:initial;
+        color: rgb(185, 35, 24);
+        font-size: 18px;
+    }
+
+    .imagenes div div .pp1, .pp2, .pp3, .pp4{
+        text-transform:initial;
+        color: rgb(44, 43, 43);
+        font-size: 16px;
+    }
+
+    /* noticias */
+    main .prep, main ol{
+        display: block;
+    }
+
+    /* contactos */
+    main .presupuestos{
+        display: block;
+    }
+}
+
+
+
+
+

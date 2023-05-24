@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link de css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- link de mi css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title> WARREN </title>
+</head>
+<body>
+       <!-- etiqueta para colocar o escribir el banner principal de mi web -->
+
+    <header class="container">
+
+        <!-- etiqueta semántica para la creación del menú -->
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-warren-encabezado.png" alt="Logo Warren" width="150px">  
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse wrap text-uppercase h5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item p-2">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="../proyecto-final/pages/la-empresa.html">La empresa</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="../proyecto-final/pages/proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="../proyecto-final/pages/noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="../proyecto-final/pages/contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>            
+    </header>
+
+    <!-- etiqueta para colocar o escribir  el contenido principal de mi web -->
+
+    <main>
+
+         <!-- etiqueta comodin div, es contenedora, pero no semántica, pueden aparecer todas las veces que querrramos -->
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            
+            <!-- Carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active p-2" >
+                <img src="img/proyectos/adaptadas/c1-cerramiento.png" alt="Cerramiento" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h2>Cerramientos</h2>
+                    <p>Nuevos Proyectos</p>
+                </div>
+            </div>
+            <div class="carousel-item p-2">
+                <img src="img/proyectos/adaptadas/c2-pileta.png" alt="Pileta" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h2>Pileta</h2>
+                    <p>Diseños unicos</p>
+                </div> 
+            </div>
+            <div class="carousel-item p-2">
+                <img src="img/proyectos/adaptadas/c3-subway-cocina.png" alt="Subway" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h2>Cocina Subway</h2>
+                    <p>Diseños únicos</p>
+                </div>  
+            </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        
+        <Section>
+            <h2> Tu proyecto es nuestro compromiso </h2>
+            <p> "Estamos comprometidos, gracias por tu confianza" </p>
+            <p> La calidad de nuestros servicios y el profesionalismo con el que llevamos a cabo cada uno de los proyectos que realizamos, nos abre las puertas para seguir creciendo junto a grandes empresas nacionales e iernacionales dentro del país. </p>
+            <p> Seguimos sumando más clientes que confían en nostros. </p>
+
+        </Section>
+
+        <h3>servicios</h3>
+
+        <div class="servicio">
+            <div class="s1">
+                <img class="si1" src="img/proyectos/adaptadas/s1-demolicion.png" alt="demolicion">
+                <div class="p1">
+                    <p class="st1">demolicion</p>
+                    <p class="sp11">Lorem ipsum dolor sit amet consectetur ...</p>
+                    <p class="sp12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veniam neque voluptas, mollitia ad, voluptatem corrupti perspiciatis maiores vero sequi, ipsa magnam numquam facilis! Earum velit eos quos aliquam architecto!</p>
+                </div>
+            </div>
+
+            <div class="s2">
+                <img class="si2" src="img/proyectos/adaptadas/s2-excavacion.png" alt="excavacion">
+                <div class="p2">
+                    <p class="st2">excavacion</p>
+                    <p class="sp21">Lorem ipsum dolor sit amet consectetur ...</p>
+                    <p class="sp22">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloremque atque pariatur amet quas perferendis nostrum incidunt suscipit quam culpa laudantium numquam cum voluptas repellendus veniam, tenetur animi sequi recusandae.</p>
+                </div>
+            </div>
+            
+            <div class="s3">
+                <img class="si3" src="img/proyectos/adaptadas/s3-cribadas.png" alt="cribadas">
+                <div class="p3">
+                    <p class="st3">losetas cribadas</p>
+                    <p class="sp31">Lorem ipsum dolor sit amet consectetur ...</p>
+                    <p class="sp32">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloremque atque pariatur amet quas perferendis nostrum incidunt suscipit quam culpa laudantium numquam cum voluptas repellendus veniam, tenetur animi sequi recusandae.</p>
+                </div>
+            </div>
+            
+            <div class="s4">
+                <img class="si4" src="img/proyectos/adaptadas/s4-ladrillo-visto.png" alt="ladrillo-visto">
+                <div class="p4">
+                    <p class="st4">ladrillos vistos</p>
+                    <p class="sp41">Lorem ipsum dolor sit amet consectetur ...</p>
+                    <p class="sp42">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloremque atque pariatur amet quas perferendis nostrum incidunt suscipit quam culpa laudantium numquam cum voluptas repellendus veniam, tenetur animi sequi recusandae.</p>
+                </div>
+            </div>
+            
+            <div class="s5">
+                <img class="si5" src="img/proyectos/adaptadas/s5-hormigon-visto.png" alt="hormigon-visto">
+                <div class="p5">
+                    <p class="st5">hormigon visto</p>
+                    <p class="sp51">Lorem ipsum dolor sit amet consectetur ...</p>
+                    <p class="sp52">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloremque atque pariatur amet quas perferendis nostrum incidunt suscipit quam culpa laudantium numquam cum voluptas repellendus veniam, tenetur animi sequi recusandae.</p>
+                </div>
+            </div>
+            
+            <div class="s6">
+                <img class="si6" src="img/proyectos/adaptadas/s6-estructura-hormigon.png" alt="estructura-hormigon">
+                <div class="p6">
+                    <p class="st6">estructura de hormigon</p>
+                    <p class="sp61">Lorem ipsum dolor sit amet consectetur ...</p>
+                    <p class="sp62">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloremque atque pariatur amet quas perferendis nostrum incidunt suscipit quam culpa laudantium numquam cum voluptas repellendus veniam, tenetur animi sequi recusandae.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+        <div>
+            <img class="item-fixed" src="img/whatsapp-logo.png" alt="Logo Whatsapp">
+        </div>
+
+    <!-- etiqueta para colocar o escribir el pie de página de mi web -->
+
+    <footer>
+        <h6> WARREN S.R.L. Todos los derecho reservados </h6>
+        <a href="#arriba"> Volver arriba </a>
+    </footer>
+
+
+</body>
+</html>

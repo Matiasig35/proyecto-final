@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link de css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+    <!-- link de mi css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title> Contacto </title>
+</head>
+<body>
+    <header class="container">
+
+        <!-- etiqueta semántica para la creación del menú -->
+            
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid encabezado">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo-warren-encabezado.png" alt="Logo Warren" width="150px">  
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse wrap text-uppercase h5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item p-2">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="../pages/la-empresa.html">La empresa</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>           
+    </header>
+    
+    <h3>Contacto</h3>
+
+   
+    
+    <main>
+    <!-- el formulario -->
+        
+        <form>
+            <fieldset>
+                <legend></legend>
+                <legend>Completa tus datos</legend>
+
+                <div>
+                    <label for="">
+                        Nombre y Apellido (requerido)
+                    </label>
+
+                    <input type="text"
+                    placeholder="Juan Gomez">
+                </div>
+
+                <div>
+                    <label for="">
+                        Su e-mail (requerido)
+                    </label>
+                    <input type="email"
+                    placeholder="jgomez@xmail.com">
+                </div>
+
+                <div>
+                    <label for="">
+                        Asunto
+                    </label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label for="">
+                        Su mensaje
+                    </label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </fieldset>
+        </form>
+
+        <section class="presupuestos">
+            <!-- tablas -->
+            <h4>Presupuestos</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum repellat, dolores cumque, doloribus labore eveniet cupiditate et exercitationem ipsam eius! Quidem, nostrum sit sint laborum beatae corporis esse placeat!</p>
+
+            <table>
+                <!-- filas de la tabla -->
+                <thead>
+                    <tr>
+                        <!-- celdas de las tablas -->
+                        <th> Nro </th>
+                        <th> tipo de proyecto </th>
+                        <th> materialidad </th>
+                        <th> estilo </th>
+                        <th> observacion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 01 </td>
+                        <td> casa </td>
+                        <td> ladrillo visto </td>
+                        <td> minimalista </td>
+                        <td> 10 meses de obra </td>
+                    </tr>
+                    <tr>
+                        <td> 02 </td>
+                        <td> paviemnto </td>
+                        <td> asfatlto </td> </td>
+                        <td> caliente </td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td> 03 </td>
+                        <td> pisos </td>
+                        <td> hormigón </td>
+                        <td> llaneado </td>
+                        <td> endurecedor natural </td>
+                    </tr>
+                    <tr>
+                        <td> 04 </td>
+                        <td> nave </td>
+                        <td> metalica </td>
+                        <td> industrial </td>
+                        <td> puente grúa </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+       
+
+        
+
+        <div>
+            <img class="item-fixed" src="/img/whatsapp-logo.png" alt="">
+        </div>
+
+    <footer>
+        <h6> WARREN S.R.L. Todos los derecho reservados </h6>
+        <a href="#arriba"> Volver arriba </a>
+    </footer>
+
+
+</body>
+</html>
