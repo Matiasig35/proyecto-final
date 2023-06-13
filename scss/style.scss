@@ -1,0 +1,73 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//import
+@import "../scss/utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/media";
+@import "html/index";
+@import "html/noticias";
+@import "html/contactos";
+@import "html/la-empresa";
+@import "html/proyectos";
+
+/* estilo fondo general*/
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url(../img/fondo-hormigon.png);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* estilos de header */
+header nav .encabezado{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    @include encabezado;
+    margin-top: 3rem;
+}
+
+/* estilos de fixed */
+.item-fixed-wsp {
+    height: 3rem;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+}
+
+/* estilos de footer */
+footer {
+    background: $color-principal;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+footer h6{
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer a{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+
+
