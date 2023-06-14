@@ -1,0 +1,81 @@
+// import
+@import "../utilidades/variables";
+@import "../utilidades/media";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* estilos de noticias */
+
+main section .noticias li img{
+    width: 100%;
+    height: 100%;
+    /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
+    object-fit: cover;
+    margin-bottom: 1rem;
+    @extend %sombra-img;
+
+    @include tablet{
+        width: 70%;
+        height: 70%;
+        margin-bottom: 3rem;
+    }
+
+    /* animaciones */
+    animation-name: imagen-noticias;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes imagen-noticias {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+main section .noticias li .n1-t, .n2-t, .n3-t, .n4-t{
+    margin: 1rem 0 1rem 0;
+    @include subtitulos;
+}
+
+main section .noticias li .n1-p, .n2-p, .n3-p, .n4-p{
+    display: none;
+    
+    @include desktop{
+        display: block;
+        @include parrafos-gen (16px);
+    }
+}
+
+
+main .prep{
+    display: none;
+    
+    @include desktop{
+        display: block;
+        @include encabezado;
+    }
+}
+
+main .ult-not{
+    margin: 0 0 0 2rem;
+    @include titulos;
+}
+
+main ol{
+    display: none;
+
+    @include desktop{
+        display: block;
+        margin: 1rem 0 0 2rem;
+        @include parrafos-gen (16px);
+        font-weight: 600;
+    }  
+}

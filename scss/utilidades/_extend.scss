@@ -1,0 +1,10 @@
+// extend
+@import "../utilidades/variables";
+
+%sombra-img{
+    box-shadow: 7px 13px 37px $color-sombra;
+}
+
+%sombra-cuad{
+    box-shadow: 7px 13px 37px #000;
+}

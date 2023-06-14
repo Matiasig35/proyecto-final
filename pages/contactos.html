@@ -29,20 +29,20 @@
                 </button>
                 <div class="collapse navbar-collapse wrap text-uppercase h5" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item p-2">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <li class="nav-item p-1">
+                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="../pages/la-empresa.html">La empresa</a>
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white" href="../pages/la-empresa.html">La empresa</a>
                         </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white" href="../pages/proyectos.html">Proyectos</a>
                         </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white" href="../pages/noticias.html">Noticias</a>
                         </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                        <li class="nav-item p-1">
+                            <a class="nav-link text-white" href="../pages/contactos.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -52,58 +52,25 @@
     
     <h3>Contacto</h3>
 
-   
-    
     <main>
     <!-- el formulario -->
+
+        <section class="form-register">
+            <h4>Dejanos tu consulta</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls-consulta" type="text" name="consulta" id="consulta" placeholder="Ingrese su Consulta">
+            <input class="botons-s" type="submit" value="Enviar">
+            <input class="botons-r" type="reset" value="Restablecer">
+            <p><a href="#">¿Otra consulta?</a></p>
+        </section>
         
-        <form>
-            <fieldset>
-                <legend></legend>
-                <legend>Completa tus datos</legend>
-
-                <div>
-                    <label for="">
-                        Nombre y Apellido (requerido)
-                    </label>
-
-                    <input type="text"
-                    placeholder="Juan Gomez">
-                </div>
-
-                <div>
-                    <label for="">
-                        Su e-mail (requerido)
-                    </label>
-                    <input type="email"
-                    placeholder="jgomez@xmail.com">
-                </div>
-
-                <div>
-                    <label for="">
-                        Asunto
-                    </label>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <label for="">
-                        Su mensaje
-                    </label>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <input type="submit">
-                    <input type="reset">
-                </div>
-            </fieldset>
-        </form>
-
         <section class="presupuestos">
             <!-- tablas -->
             <h4>Presupuestos</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum repellat, dolores cumque, doloribus labore eveniet cupiditate et exercitationem ipsam eius! Quidem, nostrum sit sint laborum beatae corporis esse placeat!</p>
+            <p>Si quieres que te hagamos un presupuesto, envíanos los datos así como figuran en el siguiente cuadro ejemplo:</p>
+            <p>Una vez definido el proyecto podemos personalizar el diseño adaptado al espacio y a cada necesidad, para sentite en un lugar exclusivo y pensado para que vos disfrutes de cada detalle.</p>
 
             <table>
                 <!-- filas de la tabla -->
@@ -112,6 +79,8 @@
                         <!-- celdas de las tablas -->
                         <th> Nro </th>
                         <th> tipo de proyecto </th>
+                        <th> unidad </th>
+                        <th> cantidad </th>
                         <th> materialidad </th>
                         <th> estilo </th>
                         <th> observacion</th>
@@ -120,48 +89,72 @@
                 <tbody>
                     <tr>
                         <td> 01 </td>
-                        <td> casa </td>
+                        <td> vivienda </td>
+                        <td> m2 </td>
+                        <td> 150 </td>
                         <td> ladrillo visto </td>
-                        <td> minimalista </td>
+                        <td> clasico </td>
                         <td> 10 meses de obra </td>
                     </tr>
                     <tr>
                         <td> 02 </td>
                         <td> paviemnto </td>
+                        <td> m2 </td>
+                        <td> 100 </td>
                         <td> asfatlto </td> </td>
-                        <td> caliente </td>
                         <td> - </td>
+                        <td> vehículos pesados </td>
                     </tr>
                     <tr>
                         <td> 03 </td>
                         <td> pisos </td>
+                        <td> m2 </td>
+                        <td> 47 </td>
                         <td> hormigón </td>
                         <td> llaneado </td>
                         <td> endurecedor natural </td>
                     </tr>
                     <tr>
                         <td> 04 </td>
-                        <td> nave </td>
+                        <td> galpón </td>
+                        <td> m2 </td>
+                        <td> 400 </td>
                         <td> metalica </td>
                         <td> industrial </td>
                         <td> puente grúa </td>
+                    </tr>
+                    <tr>
+                        <td> 05 </td>
+                        <td> Revestimiento </td>
+                        <td> m2 </td>
+                        <td> 32 </td>
+                        <td> porcelanato </td>
+                        <td> - </td>
+                        <td> Pared en baño </td>
+                    </tr>
+                    <tr>
+                        <td> 06 </td>
+                        <td> ... </td>
+                        <td> ... </td>
+                        <td> ... </td>
+                        <td> ... </td>
+                        <td> ... </td>
+                        <td> ... </td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
 
-       
-
-        
-
         <div>
-            <img class="item-fixed" src="/img/whatsapp-logo.png" alt="">
+            <a class="hiper-wsp" href="https://api.whatsapp.com/send?phone=++5493416186015&text=Warren%20Soluciones%20atender%C3%A1%20tu%20consulta..." target="_blank">
+                <img class="item-fixed-wsp" src="../img/whatsapp-logo.png" alt="Logo Whatsapp">
+            </a>
         </div>
 
     <footer>
         <h6> WARREN S.R.L. Todos los derecho reservados </h6>
-        <a href="#arriba"> Volver arriba </a>
+        <a href="#"> Volver arriba </a>
     </footer>
 
 

@@ -1,487 +1,569 @@
-/* comentario */
-/* selectores */
-/* aplicar estilos mediantes estos selectores */
-/* nombre de etiquetas */
-/*nombre de CLASS
-.nombredeClass{...}*/
-/*nombre de ID (únicos e irrepetibles)
-#nombredeID{...}*/
-
-/* RESET */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* estilo fondo general*/
-
-html {
-    height: 100%;
-  }
-
-body{
-    background-image: url(../img/fondo-hormigon.png);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-}
-
-
-/* estilos de header */
-
-header{
-    background-color: rgba(128, 128, 128, 0.548);
-}
-
-.encabezado{
-    display: flex;
-    justify-content: space-between;
-}
-
-h3{
-    background-color: rgb(185, 35, 24);
-    color: white;
-    height: 1vh;
-    margin: 1px;
-    padding: 2rem;
-    font-size: 30px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1rem;
-}
-
-
-/* estilos para pantallas de celulares */
-.wrap{
-    color: whitesmoke;
-    text-align: center;
-    padding: 1rem 1rem;
-    border: 3px solid whitesmoke;
-    box-shadow: 0 0 25px black;
-    backdrop-filter: blur 10px;
-    ;
-}
-
-
-/* estilos de main */
-
-main{
-    height: 100vh;
-    background-image: url(../img/Estructuras_Hormigon_03.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    ;
-}
-
-main p{
-    font-family: font-family, 'Roboto', sans-serif;
-    font-weight: bold;
-    }
-
-
-main section table{
-    padding: 20px;
-    margin-bottom: 50px;
-}    
-
-
-/* estilos inicio.html */
-
-section{
-    margin: 2rem;
-}
-
-section h2{
-    color: rgb(185, 35, 24);
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-section p{
-    color: rgb(44, 43, 43);
-    font-size: 16px;
-    text-transform:initial;
-}
-
-main .servicio .sp12, .sp22, .sp32, .sp42, .sp52, .sp62{
-    display: none;
-}
-
-main .servicio{
-    height: 100vh;
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-main .servicio div{
-    display: flex;
-    padding: 10px 0;
-    justify-content: center;
-}
-
-main .servicio div img{
-    width: 50%;
-    height: 100%;
-    /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
-    object-fit: cover;
-}
-
-main .servicio div div{
-    width: 50%;
-    margin-left: 15px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-main .servicio div .st1, .st2, .st3, .st4, .st5, .st6{
-    margin: 0;
-    color: rgb(185, 35, 24);
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-main .servicio div .sp11, .sp21, .sp31, .sp41, .sp51, .sp61{
-    color: rgb(44, 43, 43);
-    font-size: 15px;
-    text-transform:initial;
-}
-
-
-/* estilos proyectos.html */
-
-/* .imagenes .proyecto-1 .texto1, .proyecto-2 .texto2, .proyecto-3 .texto3, .proyecto-4 .texto4{ */
-.imagenes div div{
-    display: none;
-}
-
-.imagenes div img{
-    width: 100%;
-    height: 100%;
-    /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
-    object-fit: cover;
-}
-
-.imagenes{
-    height: 80vh;
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 55%);
-    row-gap: 1rem;
-}
-
-
-/* estilos de la-empresa */
-
-main section .titulo-puente-mujer, .parrafo-puente-mujer, .cont-puente-mujer .puente-mujer{
-    display: none;
-}
-
-.cont-puente-mujer{
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.le-pm{
-    margin: rem;
-}
-
-.le-pm-t{
-    color: rgb(185, 35, 24);
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.le-pm-p{
-    color: rgb(44, 43, 43);
-    font-size: 16px;
-    text-transform:initial;
-}
-
-.insta{
-    display: flex;
-    margin: 2rem;
-    justify-content: space-evenly;
-    align-items: baseline;
-}
-
-.insta p{
-    color: rgb(185, 35, 24);
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-
-/* estilos de noticias.html */
-
-section .noticias li img{
-    width: 100%;
-    height: 100%;
-    /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
-    object-fit: cover;
-    margin-bottom: 2rem;
-}
-
-section .noticias li .n1-t, .n2-t, .n3-t, .n4-t{
-    margin: 1rem 0 0 0;
-    color: rgb(185, 35, 24);
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-section .noticias li .n1-p, .n2-p, .n3-p, .n4-p{
-    color: rgb(44, 43, 43);
-    font-size: 16px;
-    text-transform:initial;
-}
-
-
-main .prep{
-    display: none;
-    margin: 4rem 0 0 2rem;
-    color: rgb(185, 35, 24);
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-main .ult-not{
-    margin: 4rem 0 0 2rem;
-    color: rgb(185, 35, 24);
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-main ol{
-    display: none;
-    margin: 1rem 0 0 3rem;
-    color: rgb(44, 43, 43);
-    font-size: 18px;
-    text-transform:initial;
-    font-weight: 600;
-}
-
-
-/* estilos contacto.html */
-
-main form{
-    margin: 1rem;
-    padding: 1rem;
-}
-
-main form fieldset legend{
-    color: rgb(185, 35, 24);
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-main form fieldset div{
-    margin: 1rem;
-    color: rgb(44, 43, 43);
-    font-size: 16px;
-    font-weight: 700;
-    text-transform:initial;
-}
-
-main .presupuestos{
-    display: none;
-}
-
-main .presupuestos h4{
-    color: rgb(185, 35, 24);
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-main .presupuestos p{
-    margin: 1rem;
-    color: rgb(44, 43, 43);
-    font-size: 16px;
-    font-weight: 700;
-    text-transform:initial;
-}
-
-main table{
-    border: solid 1px rgb(44, 43, 43);
-}
-
-main .presupuestos table thead{
-    background-color: rgb(185, 35, 24);
-}
- 
-main .presupuestos table thead th{
-    border-bottom: solid 1px rgb(44, 43, 43);
-    color: whitesmoke;
-    font-size: 18px;
-    text-transform:uppercase;
-    font-weight: 600;
-    text-align: center;
-    padding: 20px 15px;
-}
-
-main .presupuestos table tbody tr td{
-    border-bottom: solid 1px rgb(44, 43, 43);
-    padding: 15px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-main .presupuestos table tbody tr{
-    cursor: pointer;
-}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main .servicio div img, main section .noticias li img, .imagenes div img {
+  box-shadow: 7px 13px 37px #381919; }
+
+header nav div div ul li, main .form-register, main .form-register .botons-s, main .form-register .botons-r, main .insta {
+  box-shadow: 7px 13px 37px #000; }
+
+/* estilos de header generales*/
+header nav div div ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1rem; }
+
+header nav div div ul li {
+  display: flex;
+  justify-content: center;
+  background-color: #b92318;
+  font-size: 0.7rem;
+  margin: 0.5rem;
+  width: 100px;
+  border: 1px solid #b92318;
+  border-radius: 10px;
+  transition: 1s; }
+
+header nav div div ul li:hover {
+  transform: scale(0.9);
+  border: 1px solid white;
+  box-shadow: 2px 2px 10px whitesmoke;
+  background-color: #2c2b2b;
+  transition: 0.3s;
+  color: white;
+  cursor: pointer; }
+
+/* estilos de main generales*/
+main {
+  background-image: url(../img/Estructuras_Hormigon_03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right; }
+
+main p {
+  font-family: font-family, 'Roboto', sans-serif;
+  font-weight: bold; }
+
+main section table {
+  padding: 20px;
+  margin-bottom: 50px; }
+
+/* estilos inicio */
+main {
+  padding: 2rem; }
+
+main section h2 {
+  color: #b92318;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0.5rem; }
+
+main section p {
+  color: #2c2b2b;
+  font-size: 16px;
+  text-transform: initial;
+  text-align: justify;
+  margin-left: 0.5rem; }
+
+main .servicio .sp12, .sp22, .sp32, .sp42, .sp52, .sp62 {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    main .servicio .sp12, .sp22, .sp32, .sp42, .sp52, .sp62 {
+      display: block;
+      color: #2c2b2b;
+      font-size: 15px;
+      text-transform: initial;
+      text-align: justify; } }
+
+main .servicio {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; }
+
+main .servicio div {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center; }
+
+main .servicio div img {
+  width: 50%;
+  height: 100%;
+  /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
+  object-fit: cover; }
+
+main .servicio div div {
+  width: 50%;
+  margin-left: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+main .servicio div .st1, .st2, .st3, .st4, .st5, .st6 {
+  margin: 0;
+  color: #b92318;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+main .servicio div .sp11, .sp21, .sp31, .sp41, .sp51, .sp61 {
+  display: none;
+  color: #2c2b2b;
+  font-size: 15px;
+  text-transform: initial;
+  text-align: justify; }
+  @media screen and (min-width: 550px) {
+    main .servicio div .sp11, .sp21, .sp31, .sp41, .sp51, .sp61 {
+      display: block; } }
+  @media screen and (min-width: 1024px) {
+    main .servicio div .sp11, .sp21, .sp31, .sp41, .sp51, .sp61 {
+      display: none; } }
+
+main .servicio div img, main section .noticias li img, .imagenes div img {
+  box-shadow: 7px 13px 37px #381919; }
+
+header nav div div ul li, main .form-register, main .form-register .botons-s, main .form-register .botons-r, main .insta {
+  box-shadow: 7px 13px 37px #000; }
+
+/* estilos de noticias */
+main section .noticias li img {
+  width: 100%;
+  height: 100%;
+  /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
+  object-fit: cover;
+  margin-bottom: 1rem;
+  /* animaciones */
+  animation-name: imagen-noticias;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s; }
+  @media screen and (min-width: 550px) {
+    main section .noticias li img {
+      width: 70%;
+      height: 70%;
+      margin-bottom: 3rem; } }
+
+@keyframes imagen-noticias {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.95); }
+  100% {
+    transform: scale(1); } }
+
+main section .noticias li .n1-t, .n2-t, .n3-t, .n4-t {
+  margin: 1rem 0 1rem 0;
+  color: #b92318;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+main section .noticias li .n1-p, .n2-p, .n3-p, .n4-p {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    main section .noticias li .n1-p, .n2-p, .n3-p, .n4-p {
+      display: block;
+      color: #2c2b2b;
+      font-size: 16px;
+      text-transform: initial;
+      text-align: justify; } }
+
+main .prep {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    main .prep {
+      display: block;
+      background-color: #b92318;
+      color: white;
+      height: 1vh;
+      margin-top: 1rem;
+      padding: 2rem 0 2rem 0;
+      font-size: 30px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      row-gap: 1rem; } }
+
+main .ult-not {
+  margin: 0 0 0 2rem;
+  color: #b92318;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800; }
+
+main ol {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    main ol {
+      display: block;
+      margin: 1rem 0 0 2rem;
+      color: #2c2b2b;
+      font-size: 16px;
+      text-transform: initial;
+      text-align: justify;
+      font-weight: 600; } }
+
+main .servicio div img, main section .noticias li img, .imagenes div img {
+  box-shadow: 7px 13px 37px #381919; }
+
+header nav div div ul li, main .form-register, main .form-register .botons-s, main .form-register .botons-r, main .insta {
+  box-shadow: 7px 13px 37px #000; }
+
+/* estilos contacto */
+main .form-register {
+  width: 400px;
+  background: #b92318;
+  padding: 30px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white; }
+
+main .form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px; }
+
+main .controls {
+  width: 100%;
+  background: #2c2b2b;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #420c0c;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white; }
+
+main .controls-consulta {
+  width: 100%;
+  height: 16rem;
+  background: #2c2b2b;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #420c0c;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white; }
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px; }
+
+main .form-register a {
+  color: white;
+  text-decoration: none; }
+
+main .form-register a:hover {
+  color: white;
+  text-decoration: underline; }
+
+main .form-register .botons-s {
+  width: 100%;
+  background: rgba(168, 81, 81, 0.781);
+  border: none;
+  padding: 16px;
+  color: white;
+  margin: 15px 0;
+  font-size: 16px; }
+
+main .form-register .botons-s:hover {
+  transform: scale(0.9);
+  border: 1px solid white;
+  box-shadow: 2px 2px 10px whitesmoke;
+  background-color: #381919;
+  transition: 0.3s;
+  color: white;
+  cursor: pointer; }
+
+main .form-register .botons-r {
+  width: 100%;
+  background: rgba(168, 81, 81, 0.781);
+  border: none;
+  padding: 16px;
+  color: white;
+  margin: 15px 0;
+  font-size: 16px; }
+
+main .form-register .botons-r:hover {
+  transform: scale(0.9);
+  border: 1px solid white;
+  box-shadow: 2px 2px 10px whitesmoke;
+  background-color: #381919;
+  transition: 0.3s;
+  color: white;
+  cursor: pointer; }
+
+main .presupuestos {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    main .presupuestos {
+      display: block; } }
+
+main .presupuestos h4 {
+  background-color: #b92318;
+  color: white;
+  height: 1vh;
+  margin-top: 1rem;
+  padding: 2rem 0 2rem 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  margin-top: 10rem; }
+
+main .presupuestos p {
+  margin: 1rem;
+  color: #2c2b2b;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: initial; }
+
+main .presupuestos table {
+  border: solid 1px #2c2b2b;
+  box-shadow: 7px 13px 37px #000;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: whitesmoke; }
+
+main .presupuestos table thead {
+  background-color: #b92318; }
+
+main .presupuestos table thead th {
+  border-bottom: solid 1px #2c2b2b;
+  color: whitesmoke;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 15px; }
+
+main .presupuestos table tbody tr td {
+  border-bottom: solid 1px #2c2b2b;
+  background-color: #2c2b2b;
+  padding: 10px;
+  font-weight: 500;
+  text-transform: capitalize; }
+
+main .presupuestos table tbody tr {
+  cursor: pointer; }
 
 main .presupuestos table tbody tr:hover {
-    background-color: rgb(151, 149, 149);
-}
+  background-color: #381919; }
 
+/* estilos de la-empresa */
+main section .tit-emp, .p-emp {
+  padding-left: 1rem; }
 
-/* estilos de relative */
+main section .titulo-puente-mujer, .parrafo-puente-mujer, .cont-puente-mujer .puente-mujer {
+  display: none;
+  text-align: justify;
+  padding-left: 1rem; }
+  @media screen and (min-width: 1024px) {
+    main section .titulo-puente-mujer, .parrafo-puente-mujer, .cont-puente-mujer .puente-mujer {
+      display: block; } }
 
-.item-relative{
-    height: 300px;
-    position: relative;
-    top: 10px;
-    right: 10px;
-}
+@media screen and (min-width: 550px) {
+  main section .titulo-puente-mujer, .cont-puente-mujer .puente-mujer {
+    display: block; } }
 
-/* estilos de absolute */
+main .cont-puente-mujer {
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
-.item-absolute{
-    height: 300px;
-    position: absolute;
-    top: 800px;
-}
+main .le-pm {
+  margin: 1rem; }
+
+main .le-pm-t {
+  color: #b92318;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800; }
+
+main .le-pm-p {
+  color: #2c2b2b;
+  font-size: 16px;
+  text-transform: initial;
+  text-align: justify; }
+
+main .insta {
+  display: grid;
+  padding-left: 1rem;
+  background-color: #b92318;
+  border-radius: 10px;
+  margin: 1rem;
+  grid-template-columns: 6fr 1fr 1fr;
+  align-items: center; }
+
+main .insta p {
+  color: #b92318;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: white;
+  padding-top: 1rem;
+  padding-left: 1rem; }
+
+main .insta .hiper-insta {
+  padding: 0.5rem; }
+
+main .insta .hiper-face {
+  padding: 0.5rem; }
+
+main .servicio div img, main section .noticias li img, .imagenes div img {
+  box-shadow: 7px 13px 37px #381919; }
+
+header nav div div ul li, main .form-register, main .form-register .botons-s, main .form-register .botons-r, main .insta {
+  box-shadow: 7px 13px 37px #000; }
+
+/* estilos proyectos */
+.imagenes {
+  height: 100vh;
+  margin: 1rem 1rem 4rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 25%);
+  row-gap: 1rem; }
+  @media screen and (min-width: 550px) {
+    .imagenes {
+      height: 1200px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 25%); } }
+  @media screen and (min-width: 1024px) {
+    .imagenes {
+      height: 1600px;
+      margin-bottom: 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 25%); } }
+
+.imagenes div div {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .imagenes div div {
+      display: block;
+      margin-right: 1rem;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 10% 90%; } }
+
+.imagenes div .titulo-alt {
+  display: none; }
+  @media screen and (min-width: 550px) {
+    .imagenes div .titulo-alt {
+      display: block;
+      text-transform: initial;
+      color: #b92318;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 800; } }
+  @media screen and (min-width: 1024px) {
+    .imagenes div .titulo-alt {
+      display: none; } }
+
+.imagenes div img {
+  width: 100%;
+  height: 100%;
+  /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
+  object-fit: cover; }
+  @media screen and (min-width: 550px) {
+    .imagenes div img {
+      height: 220px; } }
+
+@media screen and (min-width: 1024px) {
+  .imagenes div {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
+
+@media screen and (min-width: 1024px) {
+  .imagenes div img {
+    height: 350px;
+    top: 5px;
+    right: 10px; } }
+
+@media screen and (min-width: 1024px) {
+  .imagenes div div .texto1, .texto2, .texto3, .texto4 {
+    text-transform: initial;
+    color: #b92318;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800; } }
+
+@media screen and (min-width: 1024px) {
+  .imagenes div div .pp1, .pp2, .pp3, .pp4 {
+    color: #2c2b2b;
+    font-size: 16px;
+    text-transform: initial;
+    text-align: justify; } }
+
+/* estilo fondo general*/
+html {
+  height: 100%; }
+
+body {
+  background-image: url(../img/fondo-hormigon.png);
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
+
+/* estilos de header */
+header nav .encabezado {
+  display: flex;
+  justify-content: space-between; }
+
+h3 {
+  background-color: #b92318;
+  color: white;
+  height: 1vh;
+  margin-top: 1rem;
+  padding: 2rem 0 2rem 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  margin-top: 3rem; }
 
 /* estilos de fixed */
+.item-fixed-wsp {
+  height: 3rem;
+  position: fixed;
+  bottom: 40px;
+  right: 10px; }
 
-.item-fixed{
-    height: 3rem;
-    position: fixed;
-    bottom: 40px;
-    right: 10px;
-}
-
-
- 
 /* estilos de footer */
-
 footer {
-    background: rgb(185, 35, 24);
-    padding: 0 20px;
-    margin-top: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    border-top: 1px solid black;
-}
+  background: #b92318;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px; }
 
-footer h6{
-    font-size: 1rem;
-    text-align: center;
-}
+footer h6 {
+  font-size: 1rem;
+  text-align: center; }
 
-footer a{
-    font-size: 1rem;
-    text-align: center;
-}
-
-
-/* estilos para desktop */
-
-/* mq de desktop */
-
-@media screen and (min-width: 1024px){
-    
-    /* index */
-    
-    main .servicio .sp11, .sp21, .sp31, .sp41, .sp51, .sp61{
-        display: none;
-    }
-
-    main .servicio .sp12, .sp22, .sp32, .sp42, .sp52, .sp62{
-        display: block;
-        color: rgb(44, 43, 43);
-        font-size: 15px;
-        text-transform:initial;
-    }   
-
-    /* la-empresa */
-
-    main section .titulo-puente-mujer, .parrafo-puente-mujer, .cont-puente-mujer .puente-mujer{
-        display: block;
-    }
-
-    /* proyectos */
-
-    .imagenes div div{
-        display: block;
-        margin-right: 5rem;
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 80%;
-    }
-    .imagenes{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 55%);
-        
-    }
-
-    .imagenes div{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .imagenes div img{
-        height: 250px;
-        position: relative;
-        top: 5px;
-        right: 10px;
-    }
-
-    .imagenes div div .texto1, .texto2, .texto3, .texto4{
-        text-transform:initial;
-        color: rgb(185, 35, 24);
-        font-size: 18px;
-    }
-
-    .imagenes div div .pp1, .pp2, .pp3, .pp4{
-        text-transform:initial;
-        color: rgb(44, 43, 43);
-        font-size: 16px;
-    }
-
-    /* noticias */
-    main .prep, main ol{
-        display: block;
-    }
-
-    /* contactos */
-    main .presupuestos{
-        display: block;
-    }
-}
-
-
-
-
-
+footer a {
+  font-size: 1rem;
+  text-align: center; }

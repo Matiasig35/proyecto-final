@@ -1,0 +1,127 @@
+//import
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+/* estilos de header generales*/
+header nav div div ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 1rem;
+}
+
+header nav div div ul li{
+    display: flex;
+    justify-content: center;
+    background-color: $color-principal;
+    font-size: 0.7rem;
+    margin: 0.5rem;
+    width: 100px;
+    border: 1px solid $color-principal;
+    border-radius: 10px;
+    @extend %sombra-cuad;
+    transition: 1s;
+}
+
+header nav div div ul li:hover{
+    transform: scale(0.9);
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px whitesmoke;
+    background-color: $color-secundario;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+/* estilos de main generales*/
+main{
+    background-image: url(../img/Estructuras_Hormigon_03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    ;
+}
+
+main p{
+    font-family: font-family, 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+main section table{
+    padding: 20px;
+    margin-bottom: 50px;
+}    
+
+/* estilos inicio */
+main{
+    padding: 2rem;
+}
+
+main section h2{
+    @include titulos;
+    margin: 0.5rem;
+}
+
+main section p{
+    @include parrafos-gen(16px);
+    margin-left: 0.5rem;
+}
+
+main .servicio .sp12, .sp22, .sp32, .sp42, .sp52, .sp62{
+    display: none;
+
+    @include desktop{
+        display: block;
+        @include parrafos-gen(15px)
+    }
+}
+
+main .servicio{
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main .servicio div{
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+main .servicio div img{
+    width: 50%;
+    height: 100%;
+    /* esta propiedad hace que las imagenes tomen el 100% de su contenedor (responsive) */
+    object-fit: cover;
+    @extend %sombra-img;
+}
+
+main .servicio div div{
+    width: 50%;
+    margin-left: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main .servicio div .st1, .st2, .st3, .st4, .st5, .st6{
+    margin: 0;
+    @include subtitulos;
+}
+
+main .servicio div .sp11, .sp21, .sp31, .sp41, .sp51, .sp61{
+    display: none;
+    @include parrafos-gen(15px);
+
+    @include tablet{
+        display: block;
+    }    
+
+    @include desktop{
+        display: none;
+    }
+}

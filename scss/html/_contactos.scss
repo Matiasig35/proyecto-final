@@ -1,0 +1,171 @@
+// import
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+@import "../utilidades/media";
+
+
+/* estilos contacto */
+main .form-register {
+    width: 400px;
+    background: $color-principal;
+    padding: 30px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    @extend %sombra-cuad;
+}
+  
+main .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+  
+main .controls{
+    width: 100%;
+    background: $color-secundario;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(66, 12, 12);
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+main .controls-consulta{
+    width: 100%;
+    height: 16rem;
+    background: $color-secundario;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(66, 12, 12);
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+  
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+  
+main .form-register a {
+    color: white;
+    text-decoration: none;
+}
+  
+main .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+  
+main .form-register .botons-s {
+    width: 100%;
+    background: $color-botones;
+    border: none;
+    padding: 16px;
+    color: white;
+    margin: 15px 0;
+    font-size: 16px;
+    @extend %sombra-cuad;
+}
+
+main .form-register .botons-s:hover{
+    transform: scale(0.9);
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px whitesmoke;
+    background-color: $color-sombra;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+main .form-register .botons-r {
+    width: 100%;
+    background: $color-botones;
+    border: none;
+    padding: 16px;
+    color: white;
+    margin: 15px 0;
+    font-size: 16px;
+    @extend %sombra-cuad;
+}
+
+main .form-register .botons-r:hover{
+    transform: scale(0.9);
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px whitesmoke;
+    background-color: $color-sombra;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+main .presupuestos{
+    display: none;
+
+    @include desktop{
+        display: block;
+    }
+}
+
+main .presupuestos h4{
+    @include encabezado;
+    margin-top: 10rem;
+}
+
+main .presupuestos p{
+    margin: 1rem;
+    color: $color-secundario;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform:initial;
+}
+
+main .presupuestos table{
+    border: solid 1px $color-secundario;
+    box-shadow: 7px 13px 37px #000;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: whitesmoke;
+}
+
+main .presupuestos table thead{
+    background-color: $color-principal;
+}
+ 
+main .presupuestos table thead th{
+    border-bottom: solid 1px $color-secundario;
+    color: whitesmoke;
+    font-size: 18px;
+    text-transform:uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+main .presupuestos table tbody tr td{
+    border-bottom: solid 1px $color-secundario;
+    background-color: $color-secundario;
+    padding: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+main .presupuestos table tbody tr{
+    cursor: pointer;
+}
+
+main .presupuestos table tbody tr:hover {
+    background-color: $color-sombra;
+}
