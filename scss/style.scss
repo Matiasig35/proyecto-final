@@ -21,8 +21,9 @@ html{
 }
 
 body{
-    background-image: url(../img/fondo-hormigon.png);
+    background-image: url(../img/fondo-ladrillos-negros.png);
     display: grid;
+    background-position: 50% 50%;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
@@ -66,8 +67,3 @@ footer a{
     font-size: 1rem;
     text-align: center;
 }
-
-
-
-
-

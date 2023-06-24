@@ -6,6 +6,12 @@
 
 /* estilos de noticias */
 
+main section .noticias li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main section .noticias li img{
     width: 100%;
     height: 100%;
@@ -15,8 +21,8 @@ main section .noticias li img{
     @extend %sombra-img;
 
     @include tablet{
-        width: 70%;
-        height: 70%;
+        width: 80%;
+        height: 80%;
         margin-bottom: 3rem;
     }
 

@@ -26,7 +26,7 @@ main .form-register h4 {
   
 main .controls{
     width: 100%;
-    background: $color-secundario;
+    background: $color-terciario;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
@@ -39,7 +39,7 @@ main .controls{
 main .controls-consulta{
     width: 100%;
     height: 16rem;
-    background: $color-secundario;
+    background: $color-terciario;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
@@ -156,7 +156,7 @@ main .presupuestos table thead th{
 
 main .presupuestos table tbody tr td{
     border-bottom: solid 1px $color-secundario;
-    background-color: $color-secundario;
+    background-color: $color-terciario;
     padding: 10px;
     font-weight: 500;
     text-transform: capitalize;
